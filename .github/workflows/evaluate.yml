@@ -1,0 +1,14 @@
+name: Level-1 Hackathon Demo
+
+on:
+  pull_request:
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout student code
+        uses: actions/checkout@v3
+
+      - name: Run demo evaluation
+        run: echo "Automation ran successfully"
